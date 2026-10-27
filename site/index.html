@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>apt.mlops.ninja</title>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 46rem; margin: 3rem auto; padding: 0 1rem; color: #222; }
+  pre { background: #f4f4f4; padding: 1rem; overflow-x: auto; border-radius: 6px; }
+  code { font-family: ui-monospace, monospace; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>apt.mlops.ninja</h1>
+<p>The Debian/Ubuntu package repository for <a href="https://github.com/mlnja">mlnja</a> tools.
+Ubuntu 22.04 LTS and newer, <code>amd64</code> and <code>arm64</code>.</p>
+
+<h2>Add the repository</h2>
+<pre><code>sudo curl -fsSLo /etc/apt/keyrings/mlops-ninja.asc https://apt.mlops.ninja/key.asc
+echo "deb [signed-by=/etc/apt/keyrings/mlops-ninja.asc] https://apt.mlops.ninja stable main" \
+  | sudo tee /etc/apt/sources.list.d/mlops-ninja.list
+sudo apt update</code></pre>
+
+<h2>Packages</h2>
+<ul>
+  <li><a href="https://fghj.mlops.ninja/"><strong>fghj</strong></a> — <code>sudo apt install fghj</code></li>
+</ul>
+<p>After that, <code>sudo apt upgrade</code> keeps them up to date.</p>
+
+<h2>Signing key</h2>
+<p><a href="key.asc">key.asc</a>, fingerprint
+<code>00DC B9C5 9B75 0F46 77E5  0C21 CC27 4C00 F0FD DFD5</code>.</p>
+</body>
+</html>

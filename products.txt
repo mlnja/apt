@@ -1,0 +1,6 @@
+# One product per line: <github repo> <package name>
+#
+# Every published (non-draft, non-prerelease) release's `.deb` assets go into
+# the repository, newest $KEEP releases per product. To ship a new product,
+# add a line here and have its release workflow attach `.deb` files.
+mlnja/fghj fghj
